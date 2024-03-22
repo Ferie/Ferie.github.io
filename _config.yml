@@ -122,6 +122,13 @@ navbar-var-length: false
 # The keywords to associate with your website, for SEO purposes
 keywords: "riccardo andreatta, riccardo's api, quotes"
 
+# This file contains configuration flags to customize your site
+#environment: "production"
+
+# Prevent site from being indexed by search engines
+# Leave empty to publish the website
+# noindex: true
+
 ######################################
 # --- Colours / background image --- #
 ######################################
@@ -288,9 +295,11 @@ exclude:
   - screenshot.png
   - docs/
 
+# Use the following plug-ins
 plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+# The release of Jekyll Now that you're using
+version: v4.0.0
